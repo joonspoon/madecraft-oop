@@ -1,42 +1,33 @@
 package examples;
 
-import java.io.File;
-
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-
 public class Duck {
 
-	private String favoriteFood;
+	// member variables: data (encapsulated / private)
+	private String name;
 	private int lifeExpectancy;
-	
+	private String favoriteFood;
 
-	public Duck(String favoriteFood, int lifeExpectancy) {
-		this.favoriteFood = favoriteFood;
+	public Duck(String name, int lifeExpectancy, String favoriteFood) {
+		super();
+		this.name = name;
 		this.lifeExpectancy = lifeExpectancy;
+		this.favoriteFood = favoriteFood;
 	}
 
-	public void waddle() {
+	// methods: functionality
+	void waddle() {
 		lifeExpectancy++;
-		System.out.println("waddle waddle");
+		System.out.println(this.name + " is waddling");
+	}
+
+	void quack() {
+		System.out.println("quack quack");
 	}
 
 	@Override
 	public String toString() {
-		return "This duck likes to eat " + this.favoriteFood + " and will live to be " + this.lifeExpectancy + ".";
-	}
-	
-	public void quack() {
-		try {
-			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/quack.wav"));
-			Clip clip = AudioSystem.getClip();
-			clip.open(audioInputStream);
-			clip.start();
-			Thread.sleep(3400);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
+		return "My name is " + name + " I like to eat " + favoriteFood +
+				" lifeExpectancy: " + lifeExpectancy;
 	}
 
 }

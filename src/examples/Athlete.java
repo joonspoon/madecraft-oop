@@ -4,27 +4,29 @@ public class Athlete {
 
 	private String name;
 	private int speed;
-	private static String location;
+	private static String marathonLocation;
 	private int bibNumber;
-	private static int numberOfRunners;
+	private static int runnersInRace;
 
 	public Athlete(String name, int speed) {
 		this.name = name;
 		this.speed = speed;
-		this.bibNumber = numberOfRunners++;
+		runnersInRace++;
+		this.bibNumber = runnersInRace;
 	}
-	
+
+	public void setMarathonLocation(String marathonLocation) {
+		this.marathonLocation = marathonLocation;
+	}
+
 	@Override
 	public String toString() {
-		return name + " " + speed + " at " + location + ", bib number " + this.bibNumber;
+		return "Athlete " + name + " is running at " + speed + " miles per hour at " + marathonLocation + " " + bibNumber;
 	}
 
-	public void setLocation(String string) {
-		this.location = string;
+	public static int getRunnersInRace() {
+		return runnersInRace;
 	}
 	
-	public static int getNumberOfRunners() {
-		return numberOfRunners;
-	}
-
+	
 }

@@ -1,10 +1,10 @@
 package exercises;
 
-public class HarryPotter {
+public class Harry {
 
 	private boolean cloakOn;
 
-	HarryPotter() {
+	Harry() {
 		System.out.println("making Harry Potter...");
 	}
 
