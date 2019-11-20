@@ -16,8 +16,8 @@
 3. From Eclipse, click File > Import > General > Existing Projects into Workspace > Next > Browse... and select the  madecraft-oop-master directory.
 
 ### [Option B] To get your own copy of the code:
-0. Extra pre-requisite: [Install Git] (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-1. Click on the ![fork](https://github.com/joonspoon/madecraft-oop/blob/master/doc/download.png) button above. This will copy this repository into your user account.
+0. Extra pre-requisite: [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. Click on the ![fork](https://github.com/joonspoon/madecraft-oop/blob/master/doc/git fork button.png) button above. This will copy this repository into your user account.
 2. From your command line ("Terminal" on Mac, "Command Prompt" in Windows), navigate into your `eclipse-workspace` directory.
 3. Copy the repository URL from the address bar at the top of this page, and type: `git clone [paste-your-repository-url]`
 4. From Eclipse, click File > Import > General > Existing Projects into Workspace > Next > Browse... and select the  `madecraft-oop` directory.
