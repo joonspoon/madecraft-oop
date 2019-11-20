@@ -10,22 +10,24 @@ public class Disease {
 		this.name = title;
 	}
 
-	public String getName() {
-		return name;
-	}
+	/* SETTERS */
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public boolean isCurable() {
-		return curable;
 	}
 
 	public void setCurable(boolean curable) {
 		this.curable = curable;
 	}
 	
+	/* GETTERS */
 	
+	public boolean isCurable() {
+		return curable;
+	}
+	
+	public String getName() {
+		return name;
+	}
 	
 }
