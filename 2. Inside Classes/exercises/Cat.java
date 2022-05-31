@@ -2,6 +2,7 @@ package exercises;
 
 public class Cat {
 
+	//private static String Garfield;
 	private String name;
 	private int lives = 9;
 
@@ -32,13 +33,25 @@ public class Cat {
 
 	public static void main(String[] args) {
 		/* Do the following things without changing the Cat class */
-
+		
+				
 		// 1. Make the Cat meow
 		
+		String catName = "Garfield";
+		
+		Cat cat1 = new Cat(catName);
+		cat1.meow();
+				
+		
 		// 2. Get the Cat to print it's name
+		//System.out.println(cat1.name);
+		cat1.printName();
 
 		// 3. Kill the Cat!
-
+	
+		cat1.lives = 1;
+		cat1.kill();
+		
 	}
 }
 
