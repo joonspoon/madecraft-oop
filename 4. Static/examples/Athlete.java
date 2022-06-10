@@ -27,6 +27,5 @@ public class Athlete {
 	public static int getRunnersInRace() {
 		return runnersInRace;
 	}
-	
-	
+		
 }
