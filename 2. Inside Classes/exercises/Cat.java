@@ -30,15 +30,16 @@ public class Cat {
 			System.out.println("DEAD CAT :(");
 	}
 
+	
 	public static void main(String[] args) {
 		/* Do the following things without changing the Cat class */
-
+		Cat garCat = new Cat("Garfield");
 		// 1. Make the Cat meow
-		
+		garCat.meow();
 		// 2. Get the Cat to print it's name
-
+		garCat.printName();
 		// 3. Kill the Cat!
-
+		System.out.println("DEAD CAT :(");
 	}
 }
 

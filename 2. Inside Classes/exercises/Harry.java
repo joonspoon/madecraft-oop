@@ -12,6 +12,7 @@ public class Harry {
 		System.out.println("casting spell: " + spell);
 	}
 
+	
 	void makeInvisible(boolean invisible) {
 		this.cloakOn = invisible;
 
@@ -27,10 +28,15 @@ public class Harry {
 
 	public static void main(String[] args) {
 		// 1. make harry potter
+		Harry mrHarry = new Harry();
 		// 2. become invisible
+		mrHarry.makeInvisible(true);
 		// 3. spy on professor snape
+		mrHarry.spyOnSnape();
 		// 4. become visible again
+		mrHarry.makeInvisible(false);
 		// 5. cast a “stupefy” spell
+		mrHarry.castSpell("stupefy");
 	}
 
 }
