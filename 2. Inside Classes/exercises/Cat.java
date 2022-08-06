@@ -70,9 +70,6 @@ public class Cat {
                                 case "0":
                                         // 0. Exit
                                         isStop = true;
-
-                                default:
-                                        System.out.println("Try again!");
                         }
                 }
 
