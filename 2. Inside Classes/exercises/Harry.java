@@ -27,6 +27,7 @@ public class Harry {
 
 	public static void main(String[] args) {
 		// 1. make harry potter
+                Harry harry = new Harry();
 		// 2. become invisible
 		// 3. spy on professor snape
 		// 4. become visible again
