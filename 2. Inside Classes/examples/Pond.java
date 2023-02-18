@@ -15,6 +15,8 @@ public class Pond {
 		mobyDuck.waddle();
 		mobyDuck.waddle();
 		mobyDuck.waddle();
+		
+		mobyDuck.quack();
 
 		wolfgangDuck.waddle();
 
